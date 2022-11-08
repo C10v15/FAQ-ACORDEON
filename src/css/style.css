@@ -1,0 +1,83 @@
+html{
+    background: #E5E5E5;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif; 
+}
+.quadrado{
+width: 655px;
+height: 347px;
+background-color: #fff;
+box-shadow: 0px 27px 49px -25px  rgba(0, 0, 0, 0.2);
+border-radius: 20px;
+display: flex;
+align-items: center;
+position: relative;
+}
+.quadrado .imagem{
+position: absolute;
+left: -90px;
+}
+
+.quadrado .conteudo{
+    width: 90%;
+    padding-left: 225px;
+}
+.quadrado .conteudo h1{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.quadrado .items .item{
+    cursor: pointer;
+    background-image: url(../imagens/seta\ 1.png);
+    background-repeat: no-repeat;
+    background-position: top 8px right 0;
+    background-size: 12px;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.quadrado .items .item:last-child {
+    border-bottom: none;
+}
+
+.quadrado .items .item .pergunta{
+    padding-bottom: 15px;
+    transition: 0,2s ease;
+    font-size: 17px;
+    width: 90%;
+    font-weight: 500;
+}
+
+.item .pergunta:hover{
+    color:#f47c57;
+}
+
+.resposta {
+    display: none;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 300;
+}
+/*ESTILO DE ITEM ITERATIVO*/
+
+.quadrado .items .item.ativo h2{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.quadrado .items .item.ativo .resposta{
+    display: block;
+}
+
+.quadrado .items .item.ativo {
+    background-image: url(../imagens/seta\ aberta.png);
+    background-repeat: no-repeat;
+}
